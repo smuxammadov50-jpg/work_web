@@ -15,14 +15,15 @@ function page() {
           match your skills and aspirations.
         </p>
 
-        <div className="mt-6 w-full max-w-3xl flex flex-col gap-3">
+        <div className="mt-6 w-full max-w-3xl flex  gap-3">
           <input
             type="text"
             placeholder="Search by job title, company, or keyword..."
             className="flex-1 rounded-lg border border-gray-300 px-4 py-3 text-sm "
           />
           <button className="px-6 py-3 rounded-lg bg-blue-900 text-white font-semibold text-sm hover:bg-blue-700 transition">
-            Search
+            Search 
+            
           </button>
         </div>
 
@@ -47,6 +48,7 @@ function page() {
             <span className="text-sm text-gray-500">Placements</span>
           </div>
         </div>
+        
       </div>
     </div>
   )

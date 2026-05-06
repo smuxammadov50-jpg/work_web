@@ -39,9 +39,38 @@ function page() {
       </div>
       <div className=""></div>
     </section>
+    {/* --------------------------------------------------222 */}
+      <div className="min-h-[500px] flex items-center justify-center bg-blue-700 text-white">
+      <div className="text-center max-w-2xl px-4">
+        
+        <h1 className="text-4xl text-5xl font-bold mb-6">
+          Ready to Advance <br /> Your Career?
+        </h1>
+
+        <p className="text-lg text-gray-200 mb-8">
+         Discover hundreds of job opportunities from leading companies. Start your journey to your next role today.
+        </p>
+
+        <div className="flex items-center justify-center gap-4">
+          <button className="bg-white text-blue-700 px-6 py-3 rounded-lg font-semibold hover:bg-gray-300 transition">
+            Explore Jobs
+          </button>
+
+          <button className="border border-white px-6 py-3 rounded-lg font-semibold hover:bg-red-400 hover:text-gray-400 transition">
+            Post a Job
+          </button>
+        </div>
+
+      </div>
+    </div>
+ 
     </div>
   )
 }
 
 export default page
 
+
+
+
+  
