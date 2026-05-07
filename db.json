@@ -15,23 +15,34 @@
       "title": "senior backend",
       "company": "meta",
       "location": "chicago",
-      "salary": "1.000$",
+      "salary": "105.000$",
       "category": "",
-      "jobType": "Freelance",
-      "description": "fnwenfjewnfjwenfnfjewnfjnfejfnewj",
-      "requirements": "typ.js",
-      "id": "5ibCJ6-KfO4"
+      "jobType": "Part-time",
+      "description": "lorem ipsum doler Matn (lotincha textus – to‘qima, birikma) – ma'lum moddiy tashuvchiga (qog‘oz, ekran) yozilgan, belgilardan iborat mantiqiy va izchil fikrlar majmuidir. U lingvistik, grammatik va semantik xususiyatlarga ega bo‘lib, axborot almashinuvi, hujjatlashtirish va badiiy ifoda vositasi sifatida xizmat qiladi. Matnning asosiy jihatlari:Tarkibi: Harflar, so‘zlar, gaplar va abzaslardan tashkil topadi.Turlari: Badiiy, ilmiy, rasmiy-idoraviy, ommabop (publitsistik) va so‘zlashuv matnlariga bo‘linadi.Xususiyatlari: Izchillik, yaxlitlik, tugallanganlik va mantiqiylik.Matn muharrirlari: Matn fayllarini yaratish va tahrirlash (masalan, MS Word) uchun ishlatiladi. Matn ustida ishlash (tahrir qilish, xatolarini to‘g‘rilash) uchun Ma",
+      "requirements": "react       next        tailwind           java ",
+      "id": "AYSiPO6rG4c"
     },
     {
-      "title": "bacend developer ",
-      "company": "meta",
+      "title": "vibe coder",
+      "company": "san",
       "location": "dubai",
-      "salary": "15.000$",
-      "category": "",
+      "salary": "123",
+      "category": "Marketing",
+      "jobType": "Part-time",
+      "description": "Matn (lotincha textus – to‘qima, birikma) – ma'lum moddiy tashuvchiga (qog‘oz, ekran) yozilgan, belgilardan iborat mantiqiy va izchil fikrlar majmuidir. U lingvistik, grammatik va semantik xususiyatlarga ega bo‘lib, axborot almashinuvi, hujjatlashtirish va badiiy ifoda vositasi sifatida xizmat qiladi. Matnning asosiy jihatlari:Tarkibi: Harflar, so‘zlar, gaplar va abzaslardan tashkil topadi.Turlari: Badiiy, ilmiy, rasmiy-idoraviy, ommabop (publitsistik) va so‘zlashuv matnlariga bo‘linadi.Xususiyatlari: Izchillik, yaxlitlik, tugallanganlik va mantiqiylik.Matn muharrirlari: Matn fayllarini yaratish va tahrirlash (masalan, MS Word) uchun ishlatiladi. Matn ustida ishlash (tahrir qilish, xatolarini to‘g‘rilash) uchun Ma",
+      "requirements": "prompt engineer",
+      "id": "Gh9jzhV7NuY"
+    },
+    {
+      "title": "ai engineer ",
+      "company": "facebook",
+      "location": "shang hai",
+      "salary": " 1234567",
+      "category": "Marketing",
       "jobType": "",
-      "description": "professional",
-      "requirements": "react tailwind boootstrap ",
-      "id": "vkl01csWhqY"
+      "description": "Matn (lotincha textus – to‘qima, birikma) – ma'lum moddiy tashuvchiga (qog‘oz, ekran) yozilgan, belgilardan iborat mantiqiy va izchil fikrlar majmuidir. U lingvistik, grammatik va semantik xususiyatlarga ega bo‘lib, axborot almashinuvi, hujjatlashtirish va badiiy ifoda vositasi sifatida xizmat qiladi. Matnning asosiy jihatlari:Tarkibi: Harflar, so‘zlar, gaplar va abzaslardan tashkil topadi.Turlari: Badiiy, ilmiy, rasmiy-idoraviy, ommabop (publitsistik) va so‘zlashuv matnlariga bo‘linadi.Xususiyatlari: Izchillik, yaxlitlik, tugallanganlik va mantiqiylik.Matn muharrirlari: Matn fayllarini yaratish va tahrirlash (masalan, MS Word) uchun ishlatiladi. Matn ustida ishlash (tahrir qilish, xatolarini to‘g‘rilash) uchun Ma",
+      "requirements": "ml   deep learning ",
+      "id": "Ur0-HizE7hY"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

@@ -102,7 +102,7 @@ const Page = () => {
                 Requirements: {job.requirements}
               </div>
 
-              <Link href={`/Home/jobDetails/${job.id}`}>
+              <Link href={`/jobDetails/${job.id}`}>
                 <button className="bg-blue-600 text-white px-4 py-2 rounded w-full">
                   View Details
                 </button>
