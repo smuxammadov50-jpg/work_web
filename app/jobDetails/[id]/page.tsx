@@ -10,17 +10,18 @@ import axios from "axios";
 
 export default function Page() {
   const { id } = useParams();
+
   const [job, setJob] = useState<Job | null>(null);
   const [open, setOpen] = useState(false);
 
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
 
   useEffect(() => {
- 
     getJob();
-  
-}, [id]);
-  
-    const getJob = async () => {
+  }, [id]);
+
+  const getJob = async () => {
     try {
       const res = await axios.get(`http://localhost:5000/jobs/${id}`);
       setJob(res.data);
@@ -29,12 +30,26 @@ export default function Page() {
     }
   };
 
-  
- 
+  const submitApplication = async () => {
+    try {
+      await axios.post("http://localhost:5000/applications", {
+        name,
+        email,
+        jobId: id,
+        jobTitle: job?.title,
+        createdAt: "Apr 30, 2026, 08:51 AM",
+      });
+
+      setOpen(false);
+      setName("");
+      setEmail("");
+    } catch (err) {
+      console.log(err);
+    }
+  };
 
   return (
     <div className="min-h-screen bg-gray-50 px-6 py-10">
-      
       <Link href="/jobs">
         <p className="text-sm text-gray-500 mb-6 cursor-pointer">
           Back to Jobs
@@ -42,7 +57,6 @@ export default function Page() {
       </Link>
 
       <div className="max-w-4xl mx-auto bg-white border rounded-2xl p-10 space-y-10">
-        
         <div>
           <h1 className="text-3xl font-bold">{job?.title}</h1>
           <p className="text-gray-500">{job?.company}</p>
@@ -50,7 +64,7 @@ export default function Page() {
 
         <div className="grid md:grid-cols-2 gap-6 text-sm">
           <div className="flex justify-between border-b pb-2">
-            <span>Location: </span>
+            <span>Location:</span>
             <span>{job?.location}</span>
           </div>
 
@@ -86,40 +100,40 @@ export default function Page() {
         >
           Apply Now
         </button>
-
       </div>
 
       <Rodal visible={open} onClose={() => setOpen(false)} width={400}>
         <div className="p-4">
-          <h2 className="text-2xl font-semibold">
-            Apply for Positions 
-          </h2>
-          <p className="font-semibold   ">
-<span className="font-semibold text-gray-500">Apply to :</span> {job?.title}
-          </p>
+          <h2 className="text-2xl font-semibold">Apply for Position</h2>
 
-      
+          <p className="text-gray-500 font-semibold">Apply to: {job?.title}</p>
 
           <div className="mt-6 space-y-4">
             <input
               type="text"
-              placeholder="Full Name"
+              placeholder="Full Name..."
+              value={name}
+              onChange={(e) => setName(e.target.value)}
               className="w-full px-3 py-2 border rounded-lg"
             />
 
             <input
               type="email"
-              placeholder="Email"
+              placeholder="Email..."
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
               className="w-full px-3 py-2 border rounded-lg"
             />
 
-            <button className="w-full bg-blue-600 text-white py-2 rounded-lg">
+            <button
+              onClick={submitApplication}
+              className="w-full bg-blue-600 text-white py-2 rounded-lg"
+            >
               Submit
             </button>
           </div>
         </div>
       </Rodal>
-
     </div>
   );
 }
