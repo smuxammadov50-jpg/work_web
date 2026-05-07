@@ -10,6 +10,18 @@
       "description": "good boy",
       "requirements": "next react java",
       "id": "_WsZlsKUJfg"
+    },
+    {
+      "title": "senior backend",
+      "company": "meta",
+      "location": "chicago",
+      "salary": "1.000$",
+      "category": "",
+      "jobType": "Freelance",
+      "description": "fnwenfjewnfjwenfnfjewnfjnfejfnewj",
+      "requirements": "typ.js",
+      "id": "5ibCJ6-KfO4"
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
