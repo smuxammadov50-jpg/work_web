@@ -31,12 +31,12 @@ const Page = () => {
         <p className="text-gray-500 mt-2">Manage all your job postings</p>
 
         <Link href="/admin/create">
-          <button className="mt-4 bg-blue-600 text-white px-5 py-2 rounded-md text-sm hover:bg-blue-700 transition">
+          <button className="mt-4 bg-blue-600 text-white px-5 py-2 rounded-md text-sm hover:bg-blue-700 ">
             Create New Job
           </button>
         </Link>
 
-        <div className="mt-8 bg-white border rounded-xl p-4">
+        <div className="mt-8 bg-white border rounded-md p-4">
           <h3 className="font-semibold mb-4">All Jobs ({jobs.length})</h3>
 
           <div className="overflow-x-auto">

@@ -43,8 +43,36 @@
       "description": "Matn (lotincha textus – to‘qima, birikma) – ma'lum moddiy tashuvchiga (qog‘oz, ekran) yozilgan, belgilardan iborat mantiqiy va izchil fikrlar majmuidir. U lingvistik, grammatik va semantik xususiyatlarga ega bo‘lib, axborot almashinuvi, hujjatlashtirish va badiiy ifoda vositasi sifatida xizmat qiladi. Matnning asosiy jihatlari:Tarkibi: Harflar, so‘zlar, gaplar va abzaslardan tashkil topadi.Turlari: Badiiy, ilmiy, rasmiy-idoraviy, ommabop (publitsistik) va so‘zlashuv matnlariga bo‘linadi.Xususiyatlari: Izchillik, yaxlitlik, tugallanganlik va mantiqiylik.Matn muharrirlari: Matn fayllarini yaratish va tahrirlash (masalan, MS Word) uchun ishlatiladi. Matn ustida ishlash (tahrir qilish, xatolarini to‘g‘rilash) uchun Ma",
       "requirements": "ml   deep learning ",
       "id": "Ur0-HizE7hY"
+    },
+    {
+      "title": "junior designer",
+      "company": "disney",
+      "location": "new york",
+      "salary": "13.000$",
+      "category": "Design",
+      "jobType": "Contract",
+      "description": "Matn (lotincha textus – to‘qima, birikma) – ma'lum moddiy tashuvchiga (qog‘oz, ekran) yozilgan, belgilardan iborat mantiqiy va izchil fikrlar majmuidir. U lingvistik, grammatik va semantik xususiyatlarga ega bo‘lib, axborot almashinuvi, hujjatlashtirish va badiiy ifoda vositasi sifatida xizmat qiladi. Matnning asosiy jihatlari:Tarkibi: Harflar, so‘zlar, gaplar va abzaslardan tashkil topadi.Turlari: Badiiy, ilmiy, rasmiy-idoraviy, ommabop (publitsistik) va so‘zlashuv matnlariga bo‘linadi.Xususiyatlari: Izchillik, yaxlitlik, tugallanganlik va mantiqiylik.Matn muharrirlari: Matn fayllarini yaratish va tahrirlash (masalan, MS Word) uchun ishlatiladi. Matn ustida ishlash (tahrir qilish, xatolarini to‘g‘rilash) uchun Ma",
+      "requirements": "fneojnf rfu3qr4f 3gfrfr gregr g ",
+      "id": "TlBf2YIrM0Y"
     }
   ],
-  "applications": [],
+  "applications": [
+    {
+      "name": "sardor",
+      "email": "sardor@gmail.com",
+      "jobId": "_WsZlsKUJfg",
+      "jobTitle": "Middle frontend",
+      "createdAt": "Apr 30, 2026, 08:51 AM",
+      "id": "QdGDOT9puD0"
+    },
+    {
+      "name": "javosh",
+      "email": "javoah@gmail.com",
+      "jobId": "Gh9jzhV7NuY",
+      "jobTitle": "vibe coder",
+      "createdAt": "Apr 30, 2026, 08:51 AM",
+      "id": "rlSRvhExMas"
+    }
+  ],
   "$schema": "./node_modules/json-server/schema.json"
 }
