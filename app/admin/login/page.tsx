@@ -1,29 +1,30 @@
 "use client";
-import  Link  from "next/link";
+import Link from "next/link";
 import { useState } from "react";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
+const page = () => {
+  const router = useRouter();
 
-const AdminFullPage = () => {
-  
   const [email, setEmail] = useState("admin@jobportal.com");
   const [password, setPassword] = useState("admin123");
+
+  const handleLogin = () => {
+    if (email === "admin@jobportal.com" && password === "admin123") {
+      router.push("/admin/jobs");
+    } else {
+      alert("Login yoki parol xato!");
+      router.push("/");
+    }
+  };
 
   return (
     <div className="flex min-h-screen bg-white">
       <div className="w-64 bg-black text-white fixed h-full left-0 top-0 flex flex-col p-6 z-50">
-        
-          <Image
-                    src="/logo.svg"
-                    alt=""
-                    width={120}
-                    height={40}
-                    
-                  />
+        <Image src="/logo.svg" alt="" width={120} height={40} />
         <div className="flex-1">
-          <p className="text-white text-md font-bold mt-5 ">
-            Admin Menu
-          </p>
+          <p className="text-white text-md font-bold mt-5 ">Admin Menu</p>
           <div className="">
             <div className="flex items-center gap-3 cursor-pointer hover:text-blue-400 transition">
               <span className="text-xl">📋</span>
@@ -41,16 +42,20 @@ const AdminFullPage = () => {
         </div>
 
         <Link href="/">
-          <button className="w-full bg-red-500 hover:bg-red-600 text-white py-2 rounded-md font-bold! ">
+          <button className="w-full bg-blue-500 hover:bg-red-600 text-white py-2 rounded-md font-bold! ">
             Logout
           </button>
         </Link>
       </div>
 
-     
       <main className="flex-1 ml-64 flex flex-col items-center justify-center p-10">
         <div className="text-center mb-8">
-        <img src="/logo.svg" alt="JobPortal Logo" width={250} className="mt-2 mx-auto" />
+          <img
+            src="/logo.svg"
+            alt="JobPortal Logo"
+            width={250}
+            className="mt-2 mx-auto"
+          />
           <h2 className="text-4xl font-extrabold text-gray-800! mt-5">
             Admin Dashboard
           </h2>
@@ -87,29 +92,32 @@ const AdminFullPage = () => {
               />
             </div>
 
-            <button className="w-full bg-blue-700 hover:bg-blue-900 text-white py-2 rounded-md font-bold text-bold shadow-lg">
+            <button
+              type="button"
+              onClick={handleLogin}
+              className="w-full bg-blue-700 hover:bg-blue-900 text-white py-2 rounded-md font-bold text-bold shadow-lg"
+            >
               Sign In
             </button>
           </form>
-
 
           <div className="mt-8 bg-[#f3f0f1] p-3 rounded-md border border-gray-200/50">
             <p className="font-bold text-gray-800! mb-2">Demo Credentials:</p>
             <div className="text-gray-600! space-y-1!">
               <p>Email: admin@jobportal.com</p>
               <p>Password: admin123</p>
-            </div>              
+            </div>
           </div>
         </div>
 
         <Link href="/">
-        <button className="mt-8! text-blue-900 font-bold">
-          Back to Home
-        </button>
+          <button className="mt-8! text-blue-900 font-bold">
+            Back to Home
+          </button>
         </Link>
       </main>
     </div>
   );
 };
 
-export default AdminFullPage;
+export default page;

@@ -1,20 +1,21 @@
-import Footer2 from "../_components/Footer2"
-import Header from "../_components/Header"
+import Footer2 from "../_components/Footer2";
+import Header from "../_components/Header";
 
-  const page=()=> {
+const page = () => {
   return (
     <div className="min-h-screen bg-gray-50">
-      <Header/>
- <div className="px-6 py-12 bg-gray-50">
-      <div className="max-w-4xl  space-y-4">
-        <h2 className="font-bold text-3xl sm:text-4xl md:text-5xl">
-          Find Your Next Opportunity
-        </h2>
-        <p className="text-gray-600 text-base sm:text-lg">
-          Explore our curated list of job openings and find the perfect match for your career.
-        </p>
+      <Header />
+      <div className="px-6 py-12 bg-gray-50">
+        <div className="max-w-4xl  space-y-4">
+          <h2 className="font-bold text-3xl sm:text-4xl md:text-5xl">
+            Find Your Next Opportunity
+          </h2>
+          <p className="text-gray-600 text-base sm:text-lg">
+            Explore our curated list of job openings and find the perfect match
+            for your career.
+          </p>
+        </div>
       </div>
-    </div>
 
       <div className="grid md:grid-cols-3 gap-6 p-6 max-w-7xl mx-auto">
         <div className="bg-white p-6 rounded-lg shadow flex flex-col gap-4">
@@ -38,8 +39,9 @@ import Header from "../_components/Header"
           <div className="bg-white p-6 rounded-lg shadow flex flex-col gap-3">
             <h3 className="text-xl font-semibold">Senior Frontend Engineer</h3>
             <p className="text-gray-600">
-              We are looking for an experienced Frontend Engineer to join our growing team.
-              You will work on modern web applications using React and TypeScript.
+              We are looking for an experienced Frontend Engineer to join our
+              growing team. You will work on modern web applications using React
+              and TypeScript.
             </p>
 
             <div className="flex flex-wrap gap-2 text-sm">
@@ -60,9 +62,9 @@ import Header from "../_components/Header"
           </div>
         </main>
       </div>
-      <Footer2/>
+      <Footer2 />
     </div>
-  )
-}
+  );
+};
 
-export default page
+export default page;

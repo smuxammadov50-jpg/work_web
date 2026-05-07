@@ -1,4 +1,6 @@
 import { Button } from "@/components/ui/button"
+import Link from "next/link";
+
 function page() {
   return (
     <div className="w-full bg-white py-16">
@@ -28,9 +30,14 @@ function page() {
         </div>
 
         <div className="mt-4 flex flex-wrap items-center justify-center gap-4">
+          <Link href="/jobs">
               <Button className="bg-blue-900  text-white hover:bg-blue-900">Browse All Jobs</Button>
+          
+          </Link>
+<Link href="/admin/login">
 
               <Button className=" bg-gray-100  text-black hover:bg-blue-900">Post a Job</Button>
+</Link>
 
         </div>
 
