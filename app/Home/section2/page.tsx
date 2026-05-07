@@ -1,4 +1,4 @@
-
+import Link from "next/link"
 function page() {
   return (
     <div>
@@ -52,13 +52,18 @@ function page() {
         </p>
 
         <div className="flex items-center justify-center gap-4">
+          <Link href={"/jobs"}>
+          
           <button className="bg-white text-blue-700 px-6 py-3 rounded-lg font-semibold hover:bg-gray-300 transition">
             Explore Jobs
           </button>
+          </Link>
+<Link href={"/admin/login"}>
 
           <button className="border border-white px-6 py-3 rounded-lg font-semibold hover:bg-red-400 hover:text-gray-400 transition">
             Post a Job
           </button>
+</Link>
         </div>
 
       </div>

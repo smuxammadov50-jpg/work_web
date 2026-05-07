@@ -36,8 +36,10 @@ const Page = () => {
   return (
     <div className="">
       <Header />
-      <div className=" max-w-4xl space-y-4 mx-auto mt-10
-      mb-10">
+      <div
+        className=" max-w-4xl space-y-4 mx-auto mt-10
+      mb-10"
+      >
         <h2 className="font-bold text-3xl sm:text-4xl md:text-5xl">
           Find Your Next Opportunity
         </h2>
@@ -64,16 +66,15 @@ const Page = () => {
           <button className="w-full border-3  text-black hover:bg-red-600  hover:text-white  py-2 rounded-md">
             Reset Filters
           </button>
-          <p className="text-gray-600 mt-15 mx-auto">Category: All Categories</p>
+          <p className="text-gray-600 mt-15 mx-auto">
+            Category: All Categories
+          </p>
         </div>
 
         <div className="md:col-span-2 flex flex-col gap-6">
           <div className="flex items-center justify-between">
-
-          <h2 className="text-2xl font-bold">
-            Available Jobs
-          </h2>
-          <h3 className="text-gray-600"> {jobs.length} positions</h3>
+            <h2 className="text-2xl font-bold">Available Jobs</h2>
+            <h3 className="text-gray-600"> {jobs.length} positions</h3>
           </div>
 
           {jobs.map((job) => (
@@ -101,7 +102,7 @@ const Page = () => {
                 Requirements: {job.requirements}
               </div>
 
-              <Link href={`/jobs/${job.id}`}>
+              <Link href={`/Home/jobDetails/${job.id}`}>
                 <button className="bg-blue-600 text-white px-4 py-2 rounded w-full">
                   View Details
                 </button>
@@ -110,7 +111,7 @@ const Page = () => {
           ))}
         </div>
       </div>
-      <Footer2/>
+      <Footer2 />
     </div>
   );
 };

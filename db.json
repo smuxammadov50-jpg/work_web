@@ -21,6 +21,17 @@
       "description": "fnwenfjewnfjwenfnfjewnfjnfejfnewj",
       "requirements": "typ.js",
       "id": "5ibCJ6-KfO4"
+    },
+    {
+      "title": "bacend developer ",
+      "company": "meta",
+      "location": "dubai",
+      "salary": "15.000$",
+      "category": "",
+      "jobType": "",
+      "description": "professional",
+      "requirements": "react tailwind boootstrap ",
+      "id": "vkl01csWhqY"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

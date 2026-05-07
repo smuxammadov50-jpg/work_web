@@ -23,10 +23,13 @@ function page() {
             placeholder="Search by job title, company, or keyword..."
             className="flex-1 rounded-lg border border-gray-300 px-4 py-3 text-sm "
           />
+          <Link href={"/jobs"}>
           <button className="px-6 py-3 rounded-lg bg-blue-900 text-white font-semibold text-sm hover:bg-blue-700 transition">
-            Search 
+            Search
             
           </button>
+          
+          </Link>
         </div>
 
         <div className="mt-4 flex flex-wrap items-center justify-center gap-4">
